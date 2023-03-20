@@ -1,0 +1,444 @@
+* {
+    margin: 0%;
+    box-sizing: border-box; 
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        scroll-padding-top: 9px;
+    }
+    
+    body {
+        background-color: #222;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        padding: 0.5%;
+        background-color: #000;
+        position: fixed;
+        align-items: center;
+        z-index: 1000;
+        justify-content: space-between;
+    }
+    
+    header .logo a {
+        font-size: 3.5em;
+        color: #ffd700;
+    }
+    
+    span {
+        color: #fff;
+        font-size: 1em;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .entet {
+        display: flex;
+        font-size: 1.2em;
+        
+    }
+     
+    .entet li {
+        margin: 0 15px;
+        list-style-type: none;
+    }
+    
+    .entet li a {
+        color: #fff;
+        font-size: 1.5em;
+    }
+    
+    .reserver {
+        font-size: 1.5em;
+        border: #ffd700 solid 1.5px;
+        color: #fff;
+        padding: 5px 25px;
+        font-weight: bolder;
+       
+    }
+    
+    .reserver:hover {
+        background-color: #ffd700;
+        color: #fff;
+    }
+    
+
+    #menu {
+        height: calc(100vh);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        position: relative;
+        background: linear-gradient(rgba(0,0,0,0.1), #333), url("./images/Monument_Renaisance.jpg");
+    }
+    
+    #menu h2 {
+       padding-top: 40px;
+       font-size: 3.5em;
+       margin-bottom: 15px;
+       -webkit-text-stroke:0.02px;
+    }
+
+    #menu h4 {
+        font-size: 6em;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    #menu p {
+        margin-bottom: 10px;
+        font-size: 2.5em;
+    }
+
+    
+
+     .actionner {
+        bottom: -30px;
+        color: #222;
+        background-color: #333;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        
+     }
+
+     .actionner form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+     }
+
+     .actionner form div, .actionner form input[type="submit"] {
+        flex-direction: column;
+        width: 20%;
+     }
+
+     .actionner form label {
+        color: #999;
+        font-size: 20px;
+        margin-bottom: 10px;
+     }
+
+     .actionner form input {
+        padding: 5px 20px;
+        background-color: transparent;
+        border: 1px solid #ffd700;
+        outline: 0;
+        width: 100%;
+        font-size: 13px;
+        color: #fff;
+        font-size: 1.5em;
+     }
+
+     .action form input[type="submit"] {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ffd700;
+        cursor: pointer;
+        transition: 0.5s;
+     }
+
+     .actionner form input[type="submit"]:hover {
+        box-shadow: 0 0 10px #ffd700;
+     }
+
+     #a-propos{
+        padding:0 10%;
+        background-color: #222;
+        margin-top: 100px;
+        margin-bottom: 50px;
+     }
+
+     .titre {
+        margin: 70px 0;
+        font-weight: bold;
+        margin-left: 15px;
+        text-transform: capitalize;
+        color: #ffd700;
+        font-size: 2.5em;
+        position: relative;
+     }
+
+     .titre::after {
+        position: absolute;
+        left: -17px;
+        width: 5px;
+        height: 100%;
+        background-color: #fff;
+        content: "";
+     }
+
+     .img-desc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+     }
+
+     .img-desc .left {
+        position: relative;
+        margin-left: 10px;
+        height: 250px;
+    }
+
+    .img-desc .left video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: 0 0 10px #ffd700;
+    }
+
+    .img-desc .left::after {
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
+        content: "";
+        background-color: #ffd700;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .img-desc .right h3 {
+        font-size: 1.9em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .img-desc .right p {
+        font-size: 1.7em;
+        color: #fff;
+        font-weight: lighter; 
+        font-style: italic;
+        margin-bottom: 36px;
+    }
+
+    .lire {
+        border: 1px solid #ffd700;
+        color: #fff;
+        padding: 8px 15px;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 6%;
+    }
+    
+    .img-desc .right a {
+        border:  1px solid #ffd700;
+        color: #ffd700;
+        font-size: 1.5em;
+        padding: 8px 25px;
+        font-weight: bold;
+    }
+
+    .interieur {
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    .exterieur {
+        color: #fff;
+        font-size: 1.5em;
+    }
+
+    #Destination-Populaire {
+        padding: 0 10%;
+        margin-bottom: 50px;
+    }
+
+   .image.active {
+        opacity: 1;
+    }  
+
+   #Destination-Populaire .contenu {
+        display:  grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        gap: 32px;
+
+   }
+
+   #Destination-Populaire  .contenu .box {
+        overflow: hidden;
+        position: relative;
+        height: 250px;
+        transition: 0.5s;
+   }
+
+   #Destination-Populaire  .contenu .box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+   }
+
+    .box .contenu {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    .box .contenu h2 {
+        font-size: 3em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .box .contenu p {
+        padding: 2px;
+        font-size: 2em;
+        font-weight: lighter;
+        margin-bottom: 13px;
+    }
+
+    .box .contenu a {
+        margin-top: 60px;
+        padding: 10px 60px;
+        border: 2px solid #ffd700;
+        color: #ffd700;
+        font-weight: bold;
+
+    }
+
+    .box:hover {
+        box-shadow: 0 0 12px #ffd700;
+    }
+
+    
+    .box:hover .contenu {
+        transform: translateX(0);
+    }
+
+   .nationale {
+        background-color: #ffd700;
+        border-radius: 45px;
+        font-size: 2em;
+        padding: 2px;
+   }
+
+   .nationale {
+        background-color: yellow;
+        border: 3px solid #ffd700;
+   }
+    
+
+     #contact {
+        padding: 0 10%;
+        margin-bottom: 50px;
+        height: 100vh;
+    }
+
+    #contact form {
+        margin: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+   .left-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+   .left-right .left, .left-right .right {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+   }
+
+    #contact form label {
+        font-size: 1.5em;
+        padding: 10px 0;
+        font-weight: bold;  
+    }
+
+   #contact form input {
+        padding: 8px;
+        outline: 0;
+        border: 1px solid #999;
+   }
+
+   textarea {
+        height: 150px;
+        width: 100%;
+        resize: none;
+        padding: 10px;
+        outline: none;
+   }
+
+   #contact form input:focus , textarea:focus {
+        border: 1px solid #ffd700;
+   }
+
+   iframe {
+        height: 150px;
+        width: 100%;
+   }
+
+   #contact button {
+        width: fit-content;
+        padding: 8px 40px;
+        background-color: #ffd700;
+        border: 1px solid #ffd700;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.5s;
+        font-weight: bold;
+        font-size: 1.7em;
+        margin-top: 2%;
+   }
+
+   #contact button:hover {
+        letter-spacing: 1px;
+   }
+
+   footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 2em;
+    text-align: center;
+   }
+
+    footer p {
+        color: #fff;
+    }
+
+   footer p span {
+        color: #ffd700;
+   }
+
+  .formulaire{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    transform: translateY(100px);
+    font-size: 1.6em;
+  }
+
+  

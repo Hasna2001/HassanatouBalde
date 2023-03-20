@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="index.css?fghjkl"> 
+	<title></title>
+
+	<style type="text/css">
+		label{
+			float: right;
+			padding: 5px;
+		}
+
+		input[type="submit"]{
+			background-color: blue;
+			color: white;
+		}
+	
+		table{
+    		border-color: maroon;
+		}
+
+		a img{
+		    border-image-outset: inherit;
+		}
+
+		.images h1{
+		    text-align: center;
+		    color: maroon;
+		    font-size: 1.5em;
+		}
+
+		.images h2{
+		    text-align: center;
+		    color: maroon;
+		    font-size: 1em;
+		}
+
+	
+		.images td{
+		    border: 4px solid #ffd700;
+		    border-radius: 20px;
+		}
+
+		a img{
+		    width: 170px;
+		    height: 170px;
+		    border-radius: 30px;
+		    margin: 20px;
+		    box-shadow: 5px 5px 10px black;
+		}
+
+		p{
+			color: white;
+			font-size: 20px;
+			padding: 20px;
+		}
+
+		.contenu{
+		    transform: translateY(-20px);
+		    line-height: 5px;
+		}
+
+		.images{
+			transform: translateY(200px);
+			margin: auto;
+		}
+		
+		.contenu button{
+			width: 20px;
+			height: 20px;
+		}
+
+		.titres{
+			transform: translate(650px, 150px);
+			color: white;
+			font-size: 30px;
+		}
+
+	</style>
+</head>
+
+<body>
+	    <div id="entete">
+      
+      <header>
+            <div class="logo">
+              <a href="index.html"> <span>Balde</span>Voyage</a>
+            </div>
+          <div id="entete">
+          <ul class="entet">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#a-propos">A propos</a></li>
+            <li><a href="#Destination-Populaire">Destinations</a></li>
+            <li><a href="#tarifs_disponibilités">Tarifs et Disponibilités</a></li>
+            <li><a href="#contact">Nous Contacter</a></li>
+          </ul>
+        </div>
+        <a  href="#" class="reserver">Réserver Maintenant</a>
+
+        <div class="responsive-entet"></div>
+      </header>
+    </div>
+
+	<div class="formulaire">
+		<fieldset>
+		<legend>Inscription</legend>
+		<table>
+			<tr>
+				<td><label id="sexe">Sexe</label></td>
+				<td>
+					<input type="radio" name="sexe" id="masculin">Masculin
+					<input type="radio" name="sexe" id="feminin">Feminin
+				</td>
+				<td><span id="error0"></span></td>
+			</tr>
+			<tr>
+				<td><label>Nom</label></td>
+				<td><input type="text" name="nom" id="nom"></td>
+				<td><span  id="error"></span></td>
+			</tr>
+			<tr>
+				<td><label>Prénom</label></td>
+				<td><input type="text" name="prenom" id="prenom"></td>
+				<td><span  id="error1"></span></td>
+			</tr>
+			<tr>
+				<td><label>Nombre de personnes</label></td>
+				<td><input type="number" name="age" id="age"></td>
+				<td><span  id="error3"></span></td>
+			</tr>
+		
+			<tr>
+				<td><label>Selectionner votre région</label></td>
+				<td>
+					<select name="region" id="region">
+						<option>Choisir votre région</option>
+						<option value="dakar">Dakar</option>
+						<option value="diourbel">Diourbel</option>
+						<option value="kaffrine">Kaffrine</option>
+						<option value="tambacounda">Tambacounda</option>
+						<option value="thiès">Thiès</option>
+						<option value="kolda">Kolda</option>
+				</select>
+				<td><span id="error7"></span></td>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Recevoir des mails</label></td>
+				<td><input type="checkbox" name="mail"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="Envoyer"></td>
+				<td><span id="error8"><img src='images/attention.png'>Toutes les informations n'ont pas été correctement remplies</span></td>
+			</tr>
+		</table>
+	</fieldset>
+	</div>
+
+		<h1 class="titres">Chambres et Villas</h1>
+	
+		<table  align="center" cellpadding="" cellspacing="7" class="images">
+			<tr>
+				<td><a href="./images/Chambre Royale1.jpg" ><img src="./images/Chambre Royale1.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre Royale1</p>
+						<p> 500000 CFA</p>
+						<p><button>+</button>&nbsp;<button>-</button></p>
+					</div>
+				</td>
+				<td><a href="./images/Chambre Royale2.jpg" ><img src="./images/Chambre Royale2.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre Royale2.jpg</p>
+						<p>600000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+				<td><a href="./images/Chambre Royale3.jpg" ><img src="./images/Chambre Royale3.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre Royale3.jpg</p>
+						<p>650000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+				<td><a href="./images/Chambre Royale4.jpg" ><img src="./images/Chambre Royale4.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre Royale4.jpg</p>
+						<p>700000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td><a href="./images/Chambre de Luxe1.jpg" ><img src="./images/Chambre de Luxe1.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre de Luxe1</p>
+						<p> 550000 CFA</p>
+						<p><button>+</button>&nbsp;<button>-</button></p>
+					</div>
+				</td>
+				<td><a href="./images/Chambre de Luxe2.jpg" ><img src="./images/Chambre de Luxe2.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre de Luxe2.jpg</p>
+						<p>600000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+				<td><a href="./images/Chambre de Luxe3.jpg" ><img src="./images/Chambre Royale3.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre de Luxe3.jpg</p>
+						<p>650000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+				<td><a href="./images/Chambre Moyenne.jpg" ><img src="./images/Chambre Moyenne.jpg"></a>
+					<div align="center" class="contenu">
+						<p>Chambre Moyenne.jpg</p>
+						<p>700000CFA</p>
+						<button>+</button>&nbsp;<button>-</button>
+					</div>
+				</td>
+			</tr>
+
+
+   		<tr>
+					<td>
+						<a href="./images/Chambre1.jpg" ><img src="./images/Chambre1.jpg" >
+						</a>
+						<div align="center" class="contenu">
+							<p>Chambre Couple</p>
+							<p>250000 CFA</p>
+							<p><button>+</button>&nbsp;<button>-</button></p>
+						</div>
+					</td>
+					<td>
+						<a href="./images/Chambre2.jpg" ><img src="./images/Chambre2.jpg" ></a>
+						<div align="center" class="contenu">
+							<p>Chambre à vue extérieure</p>
+							<p>300000 CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Chambre3.jpg" ><img src="./images/Chambre3.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Chambre enfant</p>
+							<p>150000 CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa Familiale1.jpg" ><img src="./images/Villa Familiale1.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa Familiale1</p>
+							<p>500000 CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+			</tr>
+
+			<tr>
+					<td><a href="./images/Villa Familiale2.jpg" ><img src="./images/Villa Familiale2.jpg" ></a>
+						<div align="center" class="contenu">
+							<p>Villa Familiale2</p>
+							<p>450000CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa Simple.jpg" ><img src="./images/Villa Simple.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa Simple</p>
+							<p>400000 CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa Moyenne.jpg" ><img src="./images/Villa Moyenne.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa Moyenne</p>
+							<p>470000 CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa Piscine1.jpg" ><img src="./images/Villa Piscine1.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa Piscine1</p>
+							<p> 500000  CFA</p>
+							<p><button>+</button>&nbsp;<button>-</button></p>
+						</div>
+					</td>
+			</tr>
+
+			<tr>
+					<td><a href="./images/Villa Piscine2.jpg" ><img src="./images/Villa Piscine2.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa Piscine2</p>
+							<p> 500000 CFA</p>
+							<p><button>+</button>&nbsp;<button>-</button></p>
+						</div>
+					</td>
+					<td><a href="./images/Villa de Luxe1.jpg" ><img src="./images/Villa de Luxe1.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa de Luxe1.jpg</p>
+							<p>800000CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa de Luxe2.jpg" ><img src="./images/Villa de Luxe2.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa de Luxe2.jpg</p>
+							<p>850000CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+					<td><a href="./images/Villa de Luxe3.jpg" ><img src="./images/Villa de Luxe3.jpg"></a>
+						<div align="center" class="contenu">
+							<p>Villa de Luxe3.jpg</p>
+							<p>900000CFA</p>
+							<button>+</button>&nbsp;<button>-</button>
+						</div>
+					</td>
+			</tr>
+	</div>
+
+	<script>
+		var condition = /^[a-zA-Z]{2,}$/;
+
+		var sexeId = document.getElementById('sexe');
+		sexeId.addEventListener('mouseover',function() {
+			var erreur0 = document.getElementById('error0');
+			erreur0.innerHTML = "<img src='images/info.png'> Votre sexe";
+			var masculinId = document.getElementById('masculin');
+			var femininId = document.getElementById('feminin');
+			masculinId.addEventListener('click',function () {
+				erreur0.innerHTML = "<img src='images/good.png'>";
+			});
+			femininId.addEventListener('click',function () {
+				erreur0.innerHTML = "<img src='images/good.png'>";
+			});
+			});
+
+		var nomId = document.getElementById('nom'); 
+		var mesErreurs = document.getElementById('error');
+			
+			nomId.addEventListener("focus",function(){
+				var mesErreurs = document.getElementById("error");
+				mesErreurs.innerHTML = "<img src='images/info.png'> Le nom doit contenir au moins deux caractères";
+				
+				nomId.addEventListener("input",function(){
+				if(condition.test(this.value)) {
+					mesErreurs.innerHTML = "<img src='images/good.png'>";
+				} 
+				else{
+					mesErreurs.innerHTML = "<img src='images/bad.png'> Le nom doit contenir au moins deux caractères";
+				}
+				});
+			});
+
+		var prenomId = document.getElementById('prenom'); 
+		var mesErreurs1 = document.getElementById('error1');
+		prenomId.addEventListener("focus",function(){
+				var mesErreurs1 = document.getElementById("error1");
+				mesErreurs1.innerHTML = "<img src='images/info.png'> Le prenom doit contenir au moins deux caractères";
+				
+				prenomId.addEventListener("input",function(){
+				if(condition.test(this.value)) {
+					mesErreurs1.innerHTML = "<img src='images/good.png'>";
+				} 
+				else{
+					mesErreurs1.innerHTML = "<img src='images/bad.png'> Le prenom doit contenir au moins deux caractères";
+				}
+				});
+			});
+
+
+		var nbrePersones = document.getElementById('age'); 
+		var mesErreurs3 = document.getElementById('error3');
+		nbrePersones.addEventListener("focus",function(){
+				mesErreurs3.innerHTML = "<img src='images/info.png'> L'age doit être un nombre compris entre 5 et 140 ";
+				
+				nbrePersones.addEventListener("input",function(e){
+				if(((e.target.value) < 1) || ((e.target.value) > 7)) {
+					mesErreurs3.innerHTML = "<img src='images/bad.png'> Le nombre de personnes doit être  compris entre 1 et 7";
+				} 
+				else{
+					mesErreurs3.innerHTML = "<img src='images/good.png'>";
+				}
+				});
+			});
+
+		var conditionPseudo = /^[a-zA-Z]{4,}$/;
+		var pseudoId = document.getElementById('pseudo'); 
+		var mesErreurs4 = document.getElementById('error4');
+		pseudoId.addEventListener("focus",function(){
+				mesErreurs4.innerHTML = "<img src='images/info.png'> Le pseudo doit contenir au moins quatres caractères";
+				
+				pseudoId.addEventListener("input",function(){
+				if(conditionPseudo.test(this.value)) {
+					mesErreurs4.innerHTML = "<img src='images/good.png'>";
+				} 
+				else{
+					mesErreurs4.innerHTML = "<img src='images/bad.png'> Le pseudo doit contenir au moins quatres caractères";
+				}
+				});
+			});
+
+		var conditionMotDePasse = /^[a-zA-Z0-9]{8,}$/;
+		var mdpId = document.getElementById('mdp'); 
+		var mesErreurs5 = document.getElementById('error5');
+		mdpId.addEventListener("focus",function(){
+				mesErreurs5.innerHTML = "<img src='images/info.png'> Le mot de passe doit contenir au moins quatres caractères";
+				
+				mdpId.addEventListener("input",function(){
+				if(conditionMotDePasse.test(this.value)) {
+					mesErreurs5.innerHTML = "<img src='images/good.png'>";
+				} 
+				else{
+					mesErreurs5.innerHTML = "<img src='images/bad.png'> Le mot de passe doit contenir au moins quatres caractères";
+				}
+				});
+			});
+
+
+		var mdpConfirmationId = document.getElementById('mdpconfirmation'); 
+		var mesErreurs6 = document.getElementById('error6');
+		mdpConfirmationId.addEventListener("focus",function(){
+				mesErreurs6.innerHTML = "<img src='images/info.png'> Confirmez mot de passe";
+				
+				mdpConfirmationId.addEventListener("input",function(){
+				if(conditionMotDePasse.test(this.value)) {
+					mesErreurs6.innerHTML = "<img src='images/good.png'>";
+				} 
+				else{
+					mesErreurs6.innerHTML = "<img src='images/bad.png'> Le mot de passe doit contenir au moins quatres caractères";
+				}
+				});
+			});
+
+		var paysId = document.getElementById('region'); 
+		var mesErreurs7 = document.getElementById('error7');
+		paysId.addEventListener("focus",function(){
+				mesErreurs7.innerHTML = "<img src='images/info.png'> Selectionner votre region";
+				
+				paysId.addEventListener("input",function(){
+				if(condition.test(this.value)) {
+					mesErreurs7.innerHTML = "<img src='images/good.png'>";
+					var erreur8 = document.getElementById('error8');
+					erreur8.innerText = "";
+				} 
+				else{
+					mesErreurs7.innerHTML = "<img src='images/bad.png'> Selectionner votre region";
+				}
+				});
+			});
+	</script>
+</body>
+</html>
